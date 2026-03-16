@@ -6,7 +6,7 @@ pipeline {
         stage('Clone Repository') {
             steps {
                 git branch: 'main',
-                    url: 'https://github.com/yourusername/reponame.git'
+                    url: 'https://github.com/asbeelagi05/jenki.git'
             }
         }
 

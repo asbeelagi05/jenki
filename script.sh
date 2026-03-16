@@ -1,1 +1,2 @@
-echo"revision"
+#!/bin/bash
+echo "revision"

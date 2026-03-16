@@ -3,17 +3,16 @@ pipeline {
 
     stages {
 
-        stage('Clone Repository') {
+        stage('Clone') {
             steps {
-                git branch: 'main',
-                    url: 'https://github.com/asbeelagi05/jenki.git'
+                git url: 'https://github.com/asbeelagi05/jenki.git',
+                    branch: 'main'
             }
         }
 
-        stage('Run Script') {
+        stage('Run Python Script') {
             steps {
-                sh 'chmod +x script.sh'
-                sh './script.sh'
+                sh 'python3 python.py'
             }
         }
 
